@@ -1,0 +1,13 @@
+// Base imports
+@import "../../node_modules/normalize.scss/normalize";
+@import "base/fonts";
+@import "base/variables";
+@import "base/mixins";
+@import "base/typography";
+@import "base/layout";
+@import "base/svg-icon";
+
+// Blocks imports
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/footer";

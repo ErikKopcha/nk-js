@@ -1,0 +1,55 @@
+@mixin inner {
+  width: 100%;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 100px;
+  }
+}
+
+@mixin inner-custom {
+  width: 100%;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width-custom) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width-custom) {
+    max-width: 1128px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin button-style {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1;
+  color: $color-button;
+  cursor: pointer;
+  border: none;
+  transition: $transition;
+
+  &:hover {
+    color: #ffffff;
+    background-color: $color-active;
+  }
+
+  &:active {
+    color: $color-active;
+  }
+}
