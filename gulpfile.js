@@ -50,10 +50,10 @@ gulp.task("css", function () {
 // Собирает все js файлы в один и минифицирует
 gulp.task('js', function () {
   return gulp.src("source/js/*.js")
-    .pipe(sourcemap.init())
-    .pipe(concat("script.min.js"))
-    .pipe(uglify())
-    .pipe(sourcemap.write("."))
+    // .pipe(sourcemap.init())
+    // .pipe(concat("script.min.js"))
+    // .pipe(uglify())
+    // .pipe(sourcemap.write("."))
     .pipe(gulp.dest('build/js'))
     .pipe(server.stream());
 });
@@ -112,5 +112,5 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "html", "css", "js", "images", "webp", "copy"));
+gulp.task("build", gulp.series("clean", "html", "css", "js", "images", "webp")); // "copy"
 gulp.task("start", gulp.series("build", "server"));

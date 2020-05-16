@@ -39,17 +39,17 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 1;
-  color: $color-button;
+  color: #000000;
   cursor: pointer;
   border: none;
   transition: $transition;
 
   &:hover {
     color: #ffffff;
-    background-color: $color-active;
+    background-color: #ffffff;
   }
 
   &:active {
-    color: $color-active;
+    color: #000000;
   }
 }
